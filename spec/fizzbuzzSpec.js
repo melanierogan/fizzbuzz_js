@@ -11,4 +11,16 @@ describe('FizzBuzz', function() {
       expect(fizzBuzz.play(3)).toEqual('Fizz');
     });
   });
+
+  describe('multiples of 5', function() {
+    it('buzzes for 5', function() {
+      expect(fizzBuzz.play(5)).toEqual('Buzz');
+    });
+  });
+
+  describe('3 and 5', function() {
+    it('fizzbuzz for 3 and 5', function() {
+      expect(fizzBuzz.play(15)).toEqual('FizzBuzz');
+    });
+  });
 });
